@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin:0%; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+   width: 100%;    
+   font-size:paragraph 18px;
+    
+
+}
+
+:root{
+    --Softblue:hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+    --Cyan2:hsla(178, 100%, 50%, 0.502);
+    --Verydarkbluep:hsl(217, 54%, 11%);
+    --Verydarkblues:hsl(216, 50%, 16%);
+    --Verydarkbluet:hsl(215, 32%, 27%);
+    --White:hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Verydarkbluep);
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+
+.div1{
+    height:644px;
+    width:389px;
+    background-color:hsla(215, 55%, 6%, 0.29);
+    border-radius: 10px;
+    padding: 19px;
+    box-shadow: 0px 37px 10px 34px hsl(219, 51%, 11%);
+}
+.container{
+    height: 600px;
+    width: 351px;
+    background-color: var(--Verydarkblues);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container_title{
+
+    font-weight: 600;
+    color:var(--White);
+    padding-top: 25px;
+}
+
+.container_title:hover{
+    color: var(--Cyan);
+}
+.container_text{
+    font-size: 1.6rem;
+    color: var(--Softblue);
+    padding-top: 25px;
+    padding-bottom: 25px ;
+}
+
+
+.promo{
+    display: flex;
+    padding-bottom:20px ;
+}
+
+.diamond{
+    color: var(--Cyan);
+}
+
+
+.icono_diamond{
+    background-image: url(images/icon-ethereum.svg);
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;;
+}
+.promoPrice{
+    display: flex;
+    width: 50%;
+}
+
+.days{
+    color: var(--Softblue)
+}
+.icono_horus{
+    background-image: url("./images/icon-clock.svg");
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+hr{
+    opacity: 10%;
+}
+.promoTime{
+    display: flex;
+    width: 50%;
+}
+
+
+.container_image{
+width: 100%;
+height: 306px;
+background-image:url(./images/image-equilibrium.jpg);
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+}
+
+.container__image__hover{
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--Cyan2);
+    opacity: 0;
+}
+
+.container_image:hover .container__image__hover{
+    opacity: 1;
+}
+
+.perfil{
+    padding-top: 20px;
+    display: flex;
+}
+.imgen_perfil{
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/image-avatar.png");
+    background-position: center;
+    background-size: cover;
+    border:  solid 2px var(--White);
+    border-radius:100px;
+}
+
+.contex{
+padding-left: 10px;
+display: flex;
+align-items: center;
+    
+}
+.perfil1{
+    color: var(--Softblue);
+
+}
+.perfil2{
+    color:var(--White);
+
+}
+.perfil2:hover{
+    color: var(--Cyan)
+}
+
+.attribution{
+    padding-top: 10px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+}
+.attribution a{
+    color:hsl(338, 92%, 57%);
+
+
+}
+
+@media (min-width:1440px){
+    body{
+        padding: 152px 0;
+    }
+}
